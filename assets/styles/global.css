@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("assets/fonts/Exo_2/Exo2-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("assets/fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("assets/fonts/Raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("assets/fonts/Raleway/Raleway-Bold.ttf");
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Raleway-Regular;
+}
+
+.body {
+  min-height: 0;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 3em;
+}

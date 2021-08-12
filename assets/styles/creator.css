@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+.creator-body{
+  min-height: 0vh;
+  background-color: white;
+  overflow: hidden;
+}
+.creator-image-block{
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+.image-container{
+  height: 0;
+  padding-top: 50%;
+  position: relative;
+}
+.creator-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 0 0 2vw 0;
+  box-shadow: 0px 0px 10px 10px rgb(0,0,0,0.03);
+}
+
+.creator-info-block{
+  font-family: Poppins;
+  font-size: 2.25vw;
+  width: 40%;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  float: right;
+  box-sizing: border-box;
+}
+.creator-info-block .map-icon{
+  width: 50px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: absolute;
+}
+.creator-info-block .location-container{
+  height: 150px;
+}
+.creator-info-block .location{
+  font-family: Raleway-Bold;
+  font-size: 4vw;
+  display: inline-block;
+  position: absolute;
+  margin: 10px 0 0 40px;
+}
+.creator-info-block a{
+  color: black;
+}
+.creator-info-block a:hover{
+  text-decoration: underline;
+}
+.creator-info-block .link{
+  text-decoration: underline;
+}
+.creator-info-block a:hover{
+  color: blue;
+}
+.creator-info-block .contact{
+  margin: 50px 0 10% 0;
+}
+.creator-info-block .links .link{
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+.name-description .name{
+  font-family: Raleway-Bold;
+  font-size: 5vw;
+  margin: -10px 0 0px 5px;
+}
+.name-description .description{
+  font-size: 2rem;
+  color: gray;
+  padding: 0 0 10px 2rem;
+  font-family: Raleway-Medium;
+}
+
+
+.creator-bottom{
+  color: white;
+}
+.creator-bottom .title{
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: Raleway-Bold;
+}
+.creator-bottom .published{
+  font-size: 1rem;
+  text-align: center;
+  color: gray;
+  font-family: Raleway-Medium;
+}
+
+@media (min-width: 1025px) { /*PC*/
+  .creator-image-block{
+    width: 60%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /*iPad portrait */
+  .creator-bottom .title{
+    font-size: 2rem;
+  }
+  .creator-info-block .map-icon{
+    width: 30px;
+  }
+  .location-container .location{
+    margin: 10px 0 0 20px;
+  }
+  .name-description .name {
+    font-size: 5vw;
+    margin: -5px 0 0px 5px;
+  }
+  .name-description .description {
+    font-size: 1rem;
+    padding: 0 0 10px 20px;
+  }
+  .creator-info-block .location-container {
+    height: auto;
+  }
+  .creator-info-block .contact{
+    margin: 70px 0 10% 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){ /*iPad Landscape*/
+  .creator-bottom .title{
+    font-size: 2.5rem;
+  }
+  .creator-info-block .map-icon{
+    width: 30px;
+  }
+  .location-container .location{
+    margin: 10px 0 0 20px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) { /* Phone */
+  .creator-image-block{
+    width: 100%;
+  }
+  .image-container{
+    padding-top: 60%;
+  }
+  .name-description .name{
+    font-family: Raleway-Bold;
+    font-size: 2.5rem;
+    margin-top: -5px;
+  }
+  .name-description .description{
+    font-size: 1rem;
+    padding: 0 0 0 10px;
+    text-align: left;
+  }
+  .creator-info-block{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 50px 20px 10px 20px;
+  }
+  .creator-info-block .location-container{
+    min-height: 50px;
+  }
+  .creator-info-block .location{
+    font-family: Raleway-Medium;
+    font-size: 2.5rem;
+    display: inline-block;
+    position: absolute;
+    margin: 7px 0 0 25px;
+  }
+  .creator-info-block .map-icon{
+    width: 30px;
+  }
+  .creator-info-block .contact{
+    margin: 20px 0 20px 20px;
+    text-align: right;
+  }
+  .creator-info-block .links .link{
+    display: flex;
+    text-align: right;
+  }
+  .creator-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    border-radius: 0 0 2rem 0;
+    box-shadow: 0px 0px 10px 10px rgb(0,0,0,0.03);
+  }
+  .creator-bottom{
+    padding: 0 20px 0 20px;
+  }
+  .creator-bottom .title{
+    font-size: 6.7vw;
+  }
+  .creator-bottom .published{
+    font-size: 0.7rem;
+  }
+  .creator-bottom .artworks-sort{
+    margin: 5% 0 2% 0;
+  }
+  .creator-bottom .artworks{
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) { /* Phone landscape*/
+  .creator-bottom .title{
+    font-size: 2.5rem;
+  }
+  .creator-info-block .map-icon{
+    width: 30px;
+  }
+  .location-container .location{
+    margin: 10px 0 0 20px;
+  }
+  .creator-info-block .location-container{
+    margin-bottom: 75px;
+    height: fit-content;
+  }
+  .name-description .name {
+    margin: -5px 0 0px 5px;
+    font-size: 2rem;
+  }
+  .name-description .description {
+    font-size: 1rem;
+  }
+  .creator-bottom .artworks{
+    margin-top: 5%;
+  }
+}
+
