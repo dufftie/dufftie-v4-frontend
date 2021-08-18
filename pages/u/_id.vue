@@ -1,23 +1,26 @@
 <template>
   <div>
-    <Header />
     <div v-if="loading">
-      <h1>Loaaaaaading</h1>
+      <Loading />
     </div>
     <div v-else-if="error">
+      <DeadHeader />
       <EmptyUserProfile :username="username" />
     </div>
     <div v-else>
+      <Header />
       <UserProfile :user="user" />
     </div>
   </div>
 </template>
 <script>
-import Header from "../../components/Header";
+import Header from "../../components/Essentials/Header";
 import "~/assets/styles/creator.css";
-import EmptyUserProfile from "../../components/EmptyUserProfile";
+import EmptyUserProfile from "../../components/User/EmptyUserProfile";
+import Loading from "../../components/Essentials/Loading";
+import DeadHeader from "../../components/Essentials/DeadHeader";
 export default {
-  components: {EmptyUserProfile, Header},
+  components: {DeadHeader, Loading, EmptyUserProfile, Header},
   data() {
     return {
       username: this.$route.params['id'],
