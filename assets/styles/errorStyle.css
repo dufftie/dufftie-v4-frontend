@@ -1,0 +1,144 @@
+.error-body{
+    display: block;
+    background-color: #1070AA !important;
+    color: white !important;
+    overflow: hidden;
+}
+p, a, span{
+    font-size: 1.5rem;
+}
+.error-body{
+    height: clamp(78vh, 78vh, 100%);
+    margin-bottom: 2%;
+    border-radius: 1.5em;
+    padding: 5% 0 5% 25%;
+}
+.qr-links{
+    width: 60%;
+}
+.error-container .image-container{
+    width: 80%;
+}
+.error-container #error-text{
+    margin: 1% 0 1% 0;
+    width: 65%;
+}
+.error-body #homeBtn{
+    display: block;
+    margin: 2% 0 2% 0;
+    width: fit-content;
+}
+.error-body .qr-links{
+    display: inline-block;
+}
+.error-body .qr-links .qr-container, .error-body .qr-links .links-container{
+    display: inherit;
+}
+.error-body .qr-container{
+    width: 25%;
+}
+.error-body #links-title{
+    margin-bottom: 3%;
+}
+.error-body .links-container{
+    margin-left: 1%;
+    width: 70%;
+    vertical-align: top;
+}
+.error-body .links-container .link{
+    display: block;
+    width: fit-content;
+}
+.error-body a{
+    color: white !important;
+    text-decoration: underline;
+}
+b{
+    font-family: Raleway-Bold;
+}
+a:hover{
+    color: red !important;
+}
+
+@media (min-width: 1025px) { /*PC & iPad landscape*/
+    p, a, span{
+        font-size: 1.5rem;
+    }
+    .error-body{
+        height: 75vh;
+        border-radius: 1.5em;
+        padding: 5% 0 0 25%;
+    }
+    .qr-links{
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /*iPad portrait*/
+    p, a, span{
+        font-size: 1rem;
+    }
+    .qr-links{
+        width: 80%;
+    }
+    .error-body{
+        padding: 25% 0 5% 15%;
+        min-height: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){ /*iPad Landscape*/
+    p, a, span{
+        font-size: 1rem;
+    }
+    .error-body{
+        padding: 10% 0 5% 15%;
+        min-height: 70%;
+    }
+}
+
+@media (max-width: 767px){ /* Phone */
+    p, a, span{
+        font-size: 1.25rem;
+    }
+    .error-body{
+        height: 87%;
+        border-radius: 1.5em;
+        padding: 10% 5% 0 5%;
+        margin-bottom: 10%;
+    }
+    .error-container .image-container{
+        width: 150%;
+    }
+    .error-container #error-text{
+        margin: 1% 0 1% 0;
+        width: 95%;
+    }
+    .error-body #homeBtn{
+        display: block;
+        margin: 14vw 0 24vw 0;
+        float: right;
+        text-align: right;
+    }
+    .error-body .qr-links{
+        width: 100%;
+    }
+    .error-body .links-container{
+        width: 100%;
+    }
+    .error-body .links-container #links-title{
+        margin-bottom: 5%;
+    }
+    .error-body .links-container .link{
+        text-align: right;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .error-body .qr-container{
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) { /* Phone landscape*/
+
+}
